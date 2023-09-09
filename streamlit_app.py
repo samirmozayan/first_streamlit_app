@@ -34,6 +34,9 @@ fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # output json in nice way
 streamlit.dataframe(fruityvice_normalized)
 
+#don't run anything past this point
+streamlit.stop()
+
 #snowflake stuff
 
 streamlit.header("The fruit load list contains:")
